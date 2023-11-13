@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh_screen"
+    tools:context=".Activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_211sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="244dp"
+        android:src="@drawable/white_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Matters,\nWe've Got the Details"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="67dp"
+        android:fontFamily="@font/merriweathersans_bold"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        android:textSize="@dimen/_25ssp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
